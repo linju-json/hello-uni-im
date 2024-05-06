@@ -1,0 +1,10 @@
+.DS_Store
+.hbuilderx/
+.vite/
+node_modules/
+unpackage/
+yarn.lock
+uniCloud-aliyun/database/newQuery.jql
+package-lock.json
+*.yaml
+*.log

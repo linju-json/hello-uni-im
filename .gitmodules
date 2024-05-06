@@ -1,0 +1,3 @@
+[submodule "uni_modules/uni-im"]
+	path = uni_modules/uni-im
+	url = https://gitcode.net/dcloud/uni-im.git
