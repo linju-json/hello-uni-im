@@ -1,3 +1,5 @@
+## 1.1.20（2024-04-28）
+- uni-id-co 兼容uni-app-x对客户端uniPlatform的调整（uni-app-x内uniPlatform区分app-android、app-ios）
 ## 1.1.19（2024-03-20）
 - uni-id-co 修复 实人认证的认证照片在阿里云服务空间没有保存到指定路径下的Bug
 - uni-id-co 修复 云对象开发依赖未移除的Bug
