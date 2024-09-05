@@ -1,14 +1,14 @@
 {
   "id": "uni-im-msg-reader",
   "displayName": "uni-im-msg-reader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "uni-im的消息已读未读状态展示插件",
   "keywords": [
     "uni-im-msg-reader"
 ],
   "repository": "",
   "engines": {
-    "HBuilderX": "^4.14"
+    "HBuilderX": "^4.29"
   },
   "dcloudext": {
     "type": "component-vue",
@@ -25,7 +25,7 @@
     },
     "declaration": {
       "ads": "无",
-      "data": "插件不采集任何数据",
+      "data": "无",
       "permissions": "无"
     },
     "npmurl": ""
@@ -46,17 +46,17 @@
         },
         "App": {
           "app-vue": "y",
-          "app-nvue": "y",
+          "app-nvue": "n",
           "app-uvue": "n"
         },
         "H5-mobile": {
-          "Safari": "n",
-          "Android Browser": "n",
-          "微信浏览器(Android)": "n",
-          "QQ浏览器(Android)": "n"
+          "Safari": "y",
+          "Android Browser": "y",
+          "微信浏览器(Android)": "y",
+          "QQ浏览器(Android)": "y"
         },
         "H5-pc": {
-          "Chrome": "n",
+          "Chrome": "y",
           "IE": "n",
           "Edge": "n",
           "Firefox": "n",
