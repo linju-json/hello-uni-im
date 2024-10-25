@@ -5,6 +5,31 @@
   import uniIm from '@/uni_modules/uni-im/sdk/index.js';
   // 3.引入扩展插件（项目默认引入了，扩展插件uniImMsgReader用于展示消息是否已读）
   import MsgReaderExtension from '@/uni_modules/uni-im-msg-reader/extension.js'
+  
+  // 解决APP端不支持console.time的问题
+  const consoleTimeObj = {}
+  console.time = function (name) {
+    consoleTimeObj[name] = Date.now()
+  }
+  console.timeEnd = function (name,fun) {
+    const time = Date.now() - consoleTimeObj[name]
+    if (time > 0) {
+      // if (time > 3) {
+      //   console.error(name + ':', time + 'ms')
+      // }else if(time > 1){
+      //   console.warn(name + ':', time + 'ms')
+      // }
+      // else{
+      //   console.log(name + ':', time + 'ms')
+      // }
+      
+      // // fun && fun(time)
+      // // console.log('find-'+this.constructor.name,new Error().stack)
+    } else {
+      // console.log(name + ':', time + 'ms')
+    }
+  }
+  
   export default {
     onLaunch: async function() {
       console.log('App Launch');
