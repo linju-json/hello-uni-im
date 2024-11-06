@@ -35,17 +35,6 @@
 			}
 		},
 		async onReady() {
-			if(!uniIm.isWidescreen){
-				uni.showLoading({
-					mask: true
-				});
-				try{
-					await uniIm.conversation.loadMore()
-				}catch(e){
-					console.log(e)
-				}
-				uni.hideLoading()
-			}
 		},
 		methods: {
 			//未读系统通知数量
