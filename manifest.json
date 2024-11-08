@@ -2,8 +2,8 @@
     "name" : "uni-im",
     "appid" : "__UNI__C650F93",
     "description" : "uni-im是云端一体的、全平台的、免费的、开源即时通讯系统",
-    "versionName" : "3.0.0",
-    "versionCode" : "300",
+    "versionName" : "3.4.34",
+    "versionCode" : 24110802,
     "transformPx" : false,
     "app-plus" : {
         "nvueStyleCompiler" : "uni-app",
