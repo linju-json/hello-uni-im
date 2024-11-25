@@ -149,7 +149,31 @@
             "navigationBarTitleText": "聊天设置",
             "enablePullDownRefresh": false
           }
-        }, {
+        },
+        {
+          "path" : "share-msg/share-msg",
+          "style":{
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": "选择会话",
+            "app-plus": {
+              "titleNView": {
+                "autoBackButton": false,
+                "buttons": [{
+                  "text": "取消",
+                  "fontSize": 16,
+                  "float": "left"
+                },{
+                  "text": "确定",
+                  "fontSize": 16,
+                  "float": "right",
+                  "color": "#EEE",
+                  "width": "100px"
+                }]
+              }
+            }
+          }
+        },
+        {
           "path": "group/members",
           "style": {
             "navigationBarTitleText": "群成员",
