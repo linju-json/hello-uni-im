@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import uni from '@dcloudio/vite-plugin-uni';
-import cementingPlugin from './rollup-plugin-uniapp-cementing.js'
+import cementingPlugin from '@/rollup-plugin-uniapp-cementing.js'
 
 export default defineConfig({
   plugins: [
