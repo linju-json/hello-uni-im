@@ -271,7 +271,7 @@
       ]
     }
   ],
-  // #ifndef MP-WEIXIN
+  // #ifdef APP
   "tabBar": {
   	"color": "#999999",
   	"selectedColor": "#38BC48",
@@ -302,13 +302,15 @@
     "loginPage": "uni_modules/uni-id-pages/pages/login/login-withpwd",
     "needLogin": [
     	"uni_modules/uni-im/pages/userList/userList",
-    	"uni_modules/uni-im/pages/contacts/contacts",
-    	"pages/index/index"
+    	"uni_modules/uni-im/pages/contacts/contacts"
     ]
   },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-im",
+		// #ifdef H5 
+		"navigationStyle": "custom",
+		// #endif 
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "app-plus": {
