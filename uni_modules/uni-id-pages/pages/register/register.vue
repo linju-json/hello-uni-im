@@ -13,7 +13,7 @@
 				<uni-easyinput :inputBorder="false" :focus="focusUsername" @blur="focusUsername = false"
 					class="input-box" placeholder="请输入用户名" v-model="formData.username" trim="both" />
 			</uni-forms-item>
-			<uni-forms-item name="nickname">
+			<uni-forms-item name="nickname" required>
 				<uni-easyinput :inputBorder="false" :focus="focusNickname" @blur="focusNickname = false"
 					class="input-box" placeholder="请输入用户昵称" v-model="formData.nickname" trim="both" />
 			</uni-forms-item>

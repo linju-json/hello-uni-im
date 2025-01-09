@@ -15,16 +15,7 @@ export default {
     // "google",
     // "alipay",
     // "douyin",
-
-    // #ifdef APP
-    'univerify',
-    // #endif
-    'weixin',
-    'username',
-    // #ifdef APP
-    'apple',
-    // #endif
-    'smsCode'
+    'username'
   ],
   // 政策协议
   agreements: {

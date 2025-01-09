@@ -30,6 +30,9 @@ export default {
 	},
 	"nickname": {
 		"rules": [{
+				required: true,
+				errorMessage: 'uni-im项目用户，必须要有昵称',
+			},{
 				minLength: 3,
 				maxLength: 32,
 				errorMessage: '昵称长度在 {minLength} 到 {maxLength} 个字符',
