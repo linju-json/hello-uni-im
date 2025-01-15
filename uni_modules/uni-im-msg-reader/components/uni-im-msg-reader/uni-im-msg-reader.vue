@@ -191,12 +191,12 @@ export default {
     display: flex;
     width: 100%;
     flex: 1;
+		margin-top: 5px;
     overflow: hidden;
     .read-state {
       font-size: 12px;
       flex-direction: row;
       color: #555;
-      margin: 0 60px;
       width: 65px;
       height: 16px;
     }
