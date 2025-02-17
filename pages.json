@@ -179,7 +179,21 @@
             "navigationBarTitleText": "群成员",
             "enablePullDownRefresh": false
           }
-        }
+        },
+				{
+					"path" : "group/notice/list",
+					"style" : 
+					{
+						"navigationBarTitleText" : "群公告列表"
+					}
+				},
+				{
+					"path" : "group/notice/edit",
+					"style" : 
+					{
+						"navigationBarTitleText" : "群公告管理"
+					}
+				}
       ]
     },
     {
