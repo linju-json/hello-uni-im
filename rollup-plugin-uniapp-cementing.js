@@ -61,7 +61,7 @@ function walkTo(node, matchers = []) {
 
 function cementingPlugin(options = {}) {
   const {
-    platforms = ['app', /^mp(\-.*)?$/],
+    platforms = [/^mp(\-.*)?$/],
     include = ['*.vue', '*.nvue'],
     exclude,
     resolve = __dirname,
