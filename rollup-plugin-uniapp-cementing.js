@@ -167,12 +167,14 @@ function cementingPlugin(options = {}) {
         ])
 
         let usedNames = Object.keys(usedCmps)
-        if (componentsObj) {
-          // 如果组件已经定义了 components 属性，则在其中添加
-          magicString.appendRight(componentsObj.start + 1, `\n${usedNames.join(',\n')},\n`)
-        } else {
-          // 如果组件没有定义 components 属性，则添加新定义
-          magicString.appendRight(exportDefaultObj.start + 1, `components:{\n${usedNames.join(',\n')}\n},`)
+        if (usedNames.length > 0) {
+          if (componentsObj) {
+            // 如果组件已经定义了 components 属性，则在其中添加
+            magicString.appendRight(componentsObj.start + 1, `\n${usedNames.join(',\n')},\n`)
+          } else {
+            // 如果组件没有定义 components 属性，则添加新定义
+            magicString.appendRight(exportDefaultObj.start + 1, `components:{\n${usedNames.join(',\n')}\n},`)
+          }
         }
 
         // 通过 AST 找到组件的 methods 属性并在其中添加 $isCementing() 方法
